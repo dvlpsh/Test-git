@@ -8,7 +8,7 @@ os.system('pwd')
 #init and clone
 
 os.system('git init')
-url=input('Enter url of forked repo: ')
+url=input('Enter url of forked repo if not configured, else press enter: ')
 clone='git clone '+url
 os.system(clone)
 
@@ -19,7 +19,7 @@ os.system('git remote -v')
 print("======================================================================================================================\n")
 
 #set upstream
-upstadd='git remote add upstream '+ input('Enter url to the original repo: ')
+upstadd='git remote add upstream '+ input('Enter url to the original repo if not configured, else press enter:: ')
 os.system(upstadd)
 os.system('git remote -v')
 print("======================================================================================================================\n")
