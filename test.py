@@ -1,6 +1,6 @@
 import os
 
-
+#while writing commit use escape characters or white space eg. "Update\ README.md"
 
 print('The current working directory is')
 os.system('pwd')
