@@ -25,7 +25,7 @@ os.system('git remote -v')
 print("======================================================================================================================\n")
 
 #branch and make changes
-branch_name=input('Enter branch-name')
+branch_name=input('Enter branch-name to commit: ')
 branch='git checkout -b '+branch_name
 os.system(branch)
 print('Time to make some changes!')
