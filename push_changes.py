@@ -1,5 +1,6 @@
 import os
 from os import path
+import test
 
 os.system('git status')
 
@@ -13,6 +14,7 @@ while True:
 os.system(fname)
 cmsg='git commit -m '+input('Enter commit message: ')
 os.system(cmsg)
-os.system('git push -u origin master')
+push='git push origin '+test.branch_name
+os.system(push)
 
 print('Pushed Changes! Make a Pull request!')
